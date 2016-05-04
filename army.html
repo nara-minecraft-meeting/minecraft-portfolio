@@ -1,7 +1,7 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <meta charset="utf-8"/>
+        <meta charset="utf-8"/>
       <!--Import Google Icon Font-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <!--Import materialize.css-->
@@ -18,16 +18,16 @@
               <a href="index.html" class="brand-logo">マインクラフト作品集</a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="army.html">軍部</a></li>
+                <li class="active"><a href="army.html">軍部</a></li>
                 <li><a href="construction.html">建築部</a></li>
                 <li><a href="circuit.html">回路部</a></li>
-                <li class="active"><a href="special.html">番外編</a></li>
+                <li><a href="special.html">番外編</a></li>
               </ul>
               <ul class="side-nav" id="mobile-demo">
-                <li><a href="army.html">軍部</a></li>
+                <li class="active"><a href="army.html">軍部</a></li>
                 <li><a href="construction.html">建築部</a></li>
                 <li><a href="circuit.html">回路部</a></li>
-                <li class="active"><a href="special.html">番外編</a></li>
+                <li><a href="special.html">番外編</a></li>
               </ul>
             </div>
           </nav>
@@ -47,10 +47,6 @@
       <script type="text/javascript">
         var source = {
           images:[
-            {"name":"軍艦１","author":"○○","file":"2015-03-01_19.56.33.png","detail":"戦艦〇〇〇の横浜港に帰港するときの様子を作りました。"},
-            {"name":"軍艦２","author":"XX","file":"2015-03-02_22.12.45.png","detail":"戦艦〇〇〇の横浜港に帰港するときの様子を作りました。"},
-            {"name":"軍艦３","author":"AA","file":"2015-03-26_10.10.23.png","detail":"戦艦〇〇〇の横浜港に帰港するときの様子を作りました。"},
-            {"name":"軍艦４","author":"BB","file":"2015-03-28_11.50.37.png","detail":"戦艦〇〇〇の横浜港に帰港するときの様子を作りました。"}
           ]};
 
           $(document).ready(function(){
@@ -67,11 +63,11 @@
           <div class="col m4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="special/<%- img.file %>">
+                <img class="activator responsive-img" src="army/<%- img.file %>">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><%- img.name %><i class="material-icons right">more_vert</i></span>
-                <p><%- img.author %>作<a href="special/<%- img.file %>" download=""><i class="material-icons right"><i class="material-icons">file_download</i></i></a></p>
+                <p><%- img.author %>作<a href="army/<%- img.file %>" download=""><i class="material-icons right"><i class="material-icons">file_download</i></i></a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><%- img.name %><i class="material-icons right">close</i></span>
