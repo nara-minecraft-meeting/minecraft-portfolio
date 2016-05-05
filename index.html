@@ -36,36 +36,32 @@
     <main>
       <div class="slider">
         <ul class="slides">
-          <li>
+          <li class="blue darken-3">
             <a href="army.html">
-              <img class="responsive-img" src="https://placehold.jp/10/3d4070/ffffff/800x400.png"> <!-- random image -->
               <div class="caption center-align">
                 <h3>軍部</h3>
                 <h5 class="light grey-text text-lighten-3">Army</h5>
               </div>
             </a>
           </li>
-          <li>
+          <li class="orange darken-3">
             <a href="construction.html">
-              <img class="responsive-img" src="https://placehold.jp/10/c7000d/ffffff/800x400.png"> <!-- random image -->
               <div class="caption left-align">
                 <h3>建築部</h3>
                 <h5 class="light grey-text text-lighten-3">Construction</h5>
               </div>
             </a>
           </li>
-          <li>
+          <li class="teal darken-3">
             <a href="circuit.html">
-              <img class="responsive-img" src="https://placehold.jp/10/3d9900/ffffff/800x400.png"> <!-- random image -->
               <div class="caption right-align">
                 <h3>回路部</h3>
                 <h5 class="light grey-text text-lighten-3">Circuit</h5>
               </div>
             </a>
           </li>
-          <li>
+          <li class="red darken-3">
             <a href="special.html">
-              <img class="responsive-img" src="https://placehold.jp/10/ab8300/ffffff/800x400.png"> <!-- random image -->
               <div class="caption center-align">
                 <h3>特別編</h3>
                 <h5 class="light grey-text text-lighten-3">Special Thanks</h5>
@@ -83,7 +79,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $(".button-collapse").sideNav();
-        $(".slider").slider();
+        $(".slider").slider({height:200,interval:3000,indicators:false});
       });
     </script>
   </body>
